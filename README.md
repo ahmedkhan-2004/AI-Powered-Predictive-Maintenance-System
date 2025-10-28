@@ -1,82 +1,52 @@
-AI-Powered Predictive Maintenance System
+# AI-Powered Predictive Maintenance System
 
-AI-Powered Predictive Maintenance System is a cutting-edge solution designed to predict equipment failures before they happen, helping industries reduce downtime, optimize maintenance schedules, and save costs. This project showcases my expertise in data processing, machine learning, and dashboard visualization, making it ideal for a professional portfolio or job application in AI, IoT, or Industrial Automation.
+**AI-Powered Predictive Maintenance System** is a cutting-edge solution designed to **predict equipment failures before they happen**, helping industries reduce downtime, optimize maintenance schedules, and save costs. This project showcases my expertise in **data processing, machine learning, and dashboard visualization**, making it ideal for a professional portfolio or job application in AI, IoT, or Industrial Automation.
 
-🚀 Features
+---
 
-Real-time sensor data logging from industrial equipment.
+## 🚀 Features
 
-Data preprocessing & feature engineering for high-accuracy predictions.
+- **Real-time sensor data logging** from industrial equipment.  
+- **Data preprocessing & feature engineering** for high-accuracy predictions.  
+- **Predictive machine learning model** to forecast potential failures.  
+- **Interactive dashboard** to visualize insights and maintenance recommendations.  
+- **Correlation and feature importance analysis** to identify key risk factors.  
 
-Predictive machine learning model to forecast potential failures.
+---
 
-Interactive dashboard to visualize insights and maintenance recommendations.
+## 🛠️ Tech Stack
 
-Correlation and feature importance analysis to identify key risk factors.
+- **Programming Languages:** Python  
+- **Libraries & Frameworks:** Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn, Flask  
+- **Data Storage:** CSV files, Pickle for trained models  
+- **Web & Visualization:** HTML, CSS, Templates, Dashboard visualization  
+- **Machine Learning:** Supervised learning models for predictive maintenance  
 
-🛠️ Tech Stack
+---
 
-Programming Languages: Python
+## 💡 How It Works
 
-Libraries & Frameworks: Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn, Flask
+1. Collect sensor readings from equipment.  
+2. Preprocess and clean the data.  
+3. Train a predictive model to detect potential failures.  
+4. Visualize results in an interactive dashboard.  
+5. Generate actionable insights to reduce downtime and optimize maintenance schedules.  
 
-Data Storage: CSV files, Pickle for trained models
+---
 
-Web & Visualization: HTML, CSS, Templates, Dashboard visualization
+## 📈 Results / Impact
 
-Machine Learning: Supervised learning models for predictive maintenance
+- Successfully predicted equipment failures with **high accuracy**.  
+- Reduced potential downtime and maintenance costs.  
+- Generated **visual insights** for decision-makers.  
+- Demonstrates end-to-end expertise in AI, data engineering, and deployment.  
 
-💡 How It Works
+---
 
-Collect sensor readings from equipment.
-
-Preprocess and clean the data.
-
-Train a predictive model to detect potential failures.
-
-Visualize results in an interactive dashboard.
-
-Generate actionable insights to reduce downtime and optimize maintenance schedules.
-
-📈 Results / Impact
-
-Successfully predicted equipment failures with high accuracy.
-
-Reduced potential downtime and maintenance costs.
-
-Generated visual insights for decision-makers.
-
-Demonstrates end-to-end expertise in AI, data engineering, and deployment.
-
-⚡ Getting Started
+## ⚡ Getting Started
 
 Clone the repository:
 
+```bash
 git clone https://github.com/ahmedkhan-2004/AI-Powered-Predictive-Maintenance-System.git
 cd AI-Powered-Predictive-Maintenance-System
-
-
-Install dependencies:
-
-pip install -r requirements.txt
-
-
-Run the dashboard:
-
-python dashboard.py
-
-📂 Project Structure
-Data/                     # Sensor datasets
-Templates/                # HTML templates for dashboard
-dashboard.py              # Main dashboard application
-data_processing.py        # Data cleaning & preprocessing
-data_logger.py            # Sensor data logging
-model_training.py         # Model training scripts
-predictive_model.pkl      # Trained predictive model
-static/                   # CSS / static files
-
-📞 Contact
-
-Ahmed Khan – Portfolio / LinkedIn
-
-Email: your-email@example.com
