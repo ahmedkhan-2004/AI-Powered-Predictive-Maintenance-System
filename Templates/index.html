@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Predictive Maintenance Dashboard</title>
+    <meta http-equiv="refresh" content="5">
+    <meta charset="utf-8">
+    <style>
+        body { font-family: Arial; margin: 20px; background-color: #f5f5f5; }
+        h1 { color: #333; text-align: center; }
+        .dashboard { display: flex; flex-wrap: wrap; justify-content: center; }
+        .card { background: white; border-radius: 8px; margin: 10px; padding: 15px; width: 200px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); text-align: center; }
+        .value { font-size: 24px; font-weight: bold; }
+        .status { padding: 5px; border-radius: 3px; display: inline-block; margin-top: 5px; width: 80%; }
+        .normal { background: #4CAF50; color: white; }
+        .warning { background: #FF9800; color: white; }
+        .danger { background: #F44336; color: white; }
+        .chart { margin: 20px auto; width: 90%; max-width: 800px; background: white; padding: 15px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        img { max-width: 100%; }
+        h2 { color: #444; text-align: center; }
+        table { border-collapse: collapse; width: 90%; margin: 20px auto; background: white; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+    </style>
+</head>
+<body>
+    <h1>Arduino Predictive Maintenance Dashboard</h1>
+    
+    <div class="dashboard">
+        <div class="card">
+            <h3>Temperature</h3>
+            <div class="value">{{latest.temperature}}°C</div>
+            <div class="status {{temp_status}}">{{temp_status|upper}}</div>
+        </div>
+        
+        <div class="card">
+            <h3>Humidity</h3>
+            <div class="value">{{latest.humidity}}%</div>
+        </div>
+        
+        <div class="card">
+            <h3>Vibration</h3>
+            <div class="value">{{latest.vibration}}</div>
+            <div class="status {{vib_status}}">{{vib_status|upper}}</div>
+        </div>
+        
+        <div class="card">
+            <h3>Acceleration</h3>
+            <div class="value">{{latest.accel_mag}}</div>
+            <div class="status {{accel_status}}">{{accel_status|upper}}</div>
+        </div>
+        
+        <div class="card">
+            <h3>Failure Risk</h3>
+            <div class="value">{{latest.risk}}%</div>
+            <div class="status {{risk_status}}">{{risk_status|upper}}</div>
+        </div>
+    </div>
+    
+    <h2>Live Chart</h2>
+    <div class="chart">
+        <img src="/plot" style="width: 100%;">
+    </div>
+    
+    <h2>Recent Readings</h2>
+    <table>
+        <tr>
+            <th>Time</th>
+            <th>Temp (°C)</th>
+            <th>Humidity (%)</th>
+            <th>Vibration</th>
+            <th>Accel</th>
+            <th>Risk (%)</th>
+        </tr>
+        {% for item in history %}
+        <tr>
+            <td>{{item.timestamp}}</td>
+            <td>{{item.temperature}}</td>
+            <td>{{item.humidity}}</td>
+            <td>{{item.vibration}}</td>
+            <td>{{item.accel_mag}}</td>
+            <td>{{item.risk}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
+    

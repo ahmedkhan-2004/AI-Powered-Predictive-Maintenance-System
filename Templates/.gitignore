@@ -1,0 +1,43 @@
+@"
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+.venv
+
+# Jupyter
+.ipynb_checkpoints
+*.ipynb
+
+# Data
+*.csv
+*.xlsx
+*.db
+*.sqlite
+data/
+!data/.gitkeep
+
+# Models
+models/*.pkl
+models/*.h5
+*.pkl
+*.h5
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+"@ | Out-File -FilePath .gitignore -Encoding UTF8
